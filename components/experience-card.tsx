@@ -34,12 +34,12 @@ export default function ExperienceCard({ period, title, company, description, in
       className="relative pl-8 border-l border-primary/20 pb-12 last:pb-0"
     >
       <motion.div 
-        className="absolute left-0 top-0 w-3 h-3 -translate-x-1.5 rounded-full bg-primary"
+        className="absolute left-0 top-0 w-3 h-3 -translate-x-1.5 rounded-full bg-cyan-400"
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
         transition={{ delay: index * 0.1, duration: 0.2 }}
       />
-      <time className="mb-1 text-xs sm:text-sm font-mono text-primary">{period}</time>
+      <time className="mb-1 text-xs sm:text-sm font-mono text-cyan-300">{period}</time>
       <h3 className="text-lg sm:text-xl font-bold">{title}</h3>
       <p className="text-sm sm:text-base text-muted-foreground mb-2">{company}</p>
       <p className="text-sm sm:text-base text-muted-foreground">{description}</p>

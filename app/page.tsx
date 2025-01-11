@@ -75,7 +75,7 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div
-              className="w-full sm:w-2/3 lg:w-1/2 max-w-[400px] lg:max-w-[500px] -mt-8 sm:mt-0"
+              className="w-full sm:w-2/3 lg:w-1/2 max-w-[400px] lg:max-w-[500px] mt-8"
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{
@@ -102,7 +102,7 @@ export default function Home() {
                   delay={index * 0.1}
                   className="text-center"
                 >
-                  <div className="text-2xl sm:text-3xl md:text-5xl font-bold text-primary">
+                  <div className="text-2xl sm:text-3xl md:text-5xl font-bold text-primary text-cyan-400">
                     <Counter value={Number(stat.value)} />
                   </div>
                   <div className="text-xs sm:text-sm text-muted-foreground mt-2">{stat.label}</div>

@@ -20,13 +20,13 @@ export default function ContactForm() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="space-y-4 text-center md:text-left">
         <div className="flex items-center gap-3 justify-center md:justify-start">
-          <Mail className="h-5 w-5 text-primary" />
-          <a href="mailto:hello@example.com" className="hover:text-primary">
-            hello@example.com
+          <Mail className="h-5 w-5 text-cyan-400" />
+          <a href="mailto:thecoffecoder@gmail" className="hover:text-primary">
+            thecoffecoder@gmail.com
           </a>
         </div>
         <div className="flex items-center gap-3 justify-center md:justify-start">
-          <MessageSquare className="h-5 w-5 text-primary" />
+          <MessageSquare className="h-5 w-5 text-cyan-400" />
           <span>Available for freelance work</span>
         </div>
       </div>

@@ -20,7 +20,7 @@ export default function RotatingCircle({ imageUrl, altText }: RotatingCircleProp
             cx="250"
             cy="250"
             r="248"
-            className="stroke-primary fill-none"
+            className="stroke-cyan-400 fill-none"
             strokeWidth="2"
             strokeDasharray="40,40"
           />
