@@ -34,7 +34,7 @@ export default function Home() {
               </p>
               <h1 className="text-3xl sm:text-5xl font-bold">
                 {personalData.headline}{" "}
-                <span className="text-primary block text-4xl sm:text-7xl mt-2">
+                <span className="text-primary block text-4xl sm:text-7xl mt-2 text-cyan-300">
                   {personalData.name}
                 </span>
               </h1>
@@ -42,7 +42,7 @@ export default function Home() {
                 {personalData.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center sm:items-start">
-                <Button size="lg" className="w-full sm:w-auto px-8">
+                <Button size="lg" className="w-full sm:w-auto px-8 bg-cyan-300">
                   Download CV
                 </Button>
                 <div className="flex gap-6 justify-center">
@@ -150,7 +150,7 @@ export default function Home() {
                     A passionate developer with a proven track record of delivering exceptional results.
                   </p>
                 </div>
-                <Button size="lg" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full sm:w-auto bg-cyan-300">
                   Download CV
                 </Button>
               </SectionTransition>

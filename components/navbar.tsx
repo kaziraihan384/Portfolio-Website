@@ -81,7 +81,7 @@ export default function Navbar() {
 
         {/* Desktop Hire Me Button */}
         <div className="ml-auto hidden md:flex items-center space-x-4">
-          <Button>Hire me</Button>
+          <Button className="bg-cyan-300">Hire me</Button>
         </div>
       </div>
     </header>
