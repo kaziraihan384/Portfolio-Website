@@ -42,7 +42,7 @@ export default function Home() {
                 {personalData.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center sm:items-start">
-                <Button size="lg" className="w-full sm:w-auto px-8 bg-cyan-300">
+                <Button size="lg" className="w-full sm:w-auto px-8 bg-cyan-300 hover:bg-cyan-400">
                   Download CV
                 </Button>
                 <div className="flex gap-6 justify-center">
@@ -125,6 +125,7 @@ export default function Home() {
                     key={service.id}
                     direction="left"
                     delay={index * 0.1}
+                    className="hover:text-cyan-400"
                   >
                     <ServiceCard
                       id={service.id}
@@ -150,7 +151,7 @@ export default function Home() {
                     A passionate developer with a proven track record of delivering exceptional results.
                   </p>
                 </div>
-                <Button size="lg" className="w-full sm:w-auto bg-cyan-300">
+                <Button size="lg" className="w-full sm:w-auto bg-cyan-300 hover:bg-cyan-400">
                   Download CV
                 </Button>
               </SectionTransition>

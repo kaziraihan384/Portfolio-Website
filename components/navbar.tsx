@@ -27,7 +27,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
-        <div className="ml-4 flex">
+        <div className="ml-8 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <span className="font-bold">Luke</span>
             <span className="text-[#00FF9D]">.</span>
@@ -81,7 +81,7 @@ export default function Navbar() {
 
         {/* Desktop Hire Me Button */}
         <div className="ml-auto hidden md:flex items-center space-x-4">
-          <Button className="bg-cyan-300">Hire me</Button>
+          <Button className="bg-cyan-300 hover:bg-cyan-400">Hire me</Button>
         </div>
       </div>
     </header>
