@@ -16,8 +16,8 @@ export const personalData = {
 export const stats = [
   { value: "12", label: "Years of experience" },
   { value: "26", label: "Projects completed" },
-  { value: "8", label: "Technologies mastered" },
-  { value: "500", label: "Code commits" }
+  { value: "35", label: "CV Downloads" },
+  { value: "500", label: "Views" }
 ];
 
 export const navigation = [
@@ -26,7 +26,6 @@ export const navigation = [
   { name: "Resume", href: "#resume" },
   { name: "Work", href: "#work" },
   { name: "Contact", href: "#contact" },
-  { name: "Tutorials", href: "/tutorials" }
 ];
 
 export const services = [

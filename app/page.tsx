@@ -55,15 +55,17 @@ export default function Home() {
                     }[platform];
                     
                     return (
-                      <a 
-                        key={platform}
-                        href={url} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="hover:text-primary transition-colors"
-                      >
-                        {/* <Icon className="h-5 w-5 sm:h-6 sm:w-6" /> */}
-                      </a>
+                      Icon && (
+                        <a 
+                          key={platform}
+                          href={url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="hover:text-primary transition-colors"
+                        >
+                          <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
+                        </a>
+                      )
                     );
                   })}
                 </div>
