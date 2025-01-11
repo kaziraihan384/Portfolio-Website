@@ -102,7 +102,7 @@ export default function Home() {
                   delay={index * 0.1}
                   className="text-center"
                 >
-                  <div className="text-2xl sm:text-3xl md:text-5xl font-bold text-cyan-400">
+                  <div className="text-2xl sm:text-3xl md:text-5xl font-bold text-cyan-300">
                     <Counter value={Number(stat.value)} />
                   </div>
                   <div className="text-xs sm:text-sm text-muted-foreground mt-2">{stat.label}</div>
