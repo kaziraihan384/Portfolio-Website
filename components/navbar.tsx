@@ -81,7 +81,9 @@ export default function Navbar() {
 
         {/* Desktop Hire Me Button */}
         <div className="ml-auto hidden md:flex items-center space-x-4">
+        <Link href="/CV.pdf" download>
           <Button className="bg-cyan-300 hover:bg-cyan-400">Hire me</Button>
+        </Link>
         </div>
       </div>
     </header>

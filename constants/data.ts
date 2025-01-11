@@ -1,14 +1,14 @@
 export const personalData = {
-  name: "Luke Coleman",
+  name: "Kazi Raihan",
   role: "Software Developer",
   headline: "Hello I'm",
   description: "I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies.",
-  image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080&auto=format&fit=crop",
+  image: "https://ucarecdn.com/f9ad92d5-1d0b-4776-a023-9d6681ab09ca/-/preview/958x960/",
   resumeUrl: "/resume.pdf",
   socialLinks: {
-    github: "https://github.com/lukecoleman",
-    linkedin: "https://linkedin.com/in/lukecoleman",
-    youtube: "https://youtube.com/@lukecoleman",
+    github: "https://github.com/TheCoffeCoder",
+    linkedin: "https://www.linkedin.com/in/kazi-raihan-b636552b6/",
+    youtube: "https://www.youtube.com/@thecoffecoder4503",
     twitter: "https://twitter.com/lukecoleman"
   }
 };
@@ -91,8 +91,8 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
     tags: ["Html 5", "Css 3", "Javascript"],
     links: {
-      demo: "https://demo.example.com",
-      github: "https://github.com/example"
+      demo: "https://github.com/TheCoffeCoder/LOGO-PRO",
+      github: "https://github.com/TheCoffeCoder/LOGO-PRO"
     }
   },
   {
@@ -102,8 +102,8 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2370&auto=format&fit=crop",
     tags: ["Node.js", "Express", "MongoDB"],
     links: {
-      demo: "https://api.example.com",
-      github: "https://github.com/example"
+      demo: "https://github.com/TheCoffeCoder/LOGO-PRO",
+      github: "https://github.com/TheCoffeCoder/LOGO-PRO"
     }
   }
 ];

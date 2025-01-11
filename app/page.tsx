@@ -12,6 +12,7 @@ import ContactForm from "@/components/contact-form";
 import RotatingCircle from "@/components/rotating-circle";
 import SectionTransition from "@/components/section-transition";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -20,11 +21,11 @@ export default function Home() {
         {/* Hero Section */}
         <section id="home" className="min-h-[calc(100vh-4rem)] pt-16 sm:pt-20 flex items-center">
           <div className="container flex flex-col items-center lg:flex-row lg:items-center justify-center gap-8 sm:gap-16 px-4 sm:px-6 lg:px-8">
-            <motion.div 
+            <motion.div
               className="flex-1 space-y-6 sm:space-y-8 text-center lg:text-left max-w-2xl mx-auto lg:mx-0"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ 
+              transition={{
                 duration: 0.8,
                 ease: [0.22, 1, 0.36, 1]
               }}
@@ -42,9 +43,11 @@ export default function Home() {
                 {personalData.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center sm:items-start">
-                <Button size="lg" className="w-full sm:w-auto px-8 bg-cyan-300 hover:bg-cyan-400">
-                  Download CV
-                </Button>
+                <Link href="/CV.pdf" download>
+                  <Button size="lg" className="w-full sm:w-auto px-8 bg-cyan-300 hover:bg-cyan-400">
+                    Download CV
+                  </Button>
+                </Link>
                 <div className="flex gap-6 justify-center">
                   {Object.entries(personalData.socialLinks).map(([platform, url]) => {
                     const Icon = {
@@ -53,13 +56,13 @@ export default function Home() {
                       youtube: Youtube,
                       twitter: Twitter
                     }[platform];
-                    
+
                     return (
                       Icon && (
-                        <a 
+                        <a
                           key={platform}
-                          href={url} 
-                          target="_blank" 
+                          href={url}
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="hover:text-primary transition-colors"
                         >
@@ -75,12 +78,12 @@ export default function Home() {
               className="w-full sm:w-2/3 lg:w-1/2 max-w-[400px] lg:max-w-[500px] -mt-8 sm:mt-0"
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ 
+              transition={{
                 duration: 0.8,
                 ease: [0.22, 1, 0.36, 1]
               }}
             >
-              <RotatingCircle 
+              <RotatingCircle
                 imageUrl={personalData.image}
                 altText={personalData.name}
               />
@@ -93,7 +96,7 @@ export default function Home() {
           <div className="container px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 max-w-5xl mx-auto">
               {stats.map((stat, index) => (
-                <SectionTransition 
+                <SectionTransition
                   key={stat.label}
                   direction="up"
                   delay={index * 0.1}
@@ -121,7 +124,7 @@ export default function Home() {
               </SectionTransition>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {services.map((service, index) => (
-                  <SectionTransition 
+                  <SectionTransition
                     key={service.id}
                     direction="left"
                     delay={index * 0.1}
@@ -151,9 +154,11 @@ export default function Home() {
                     A passionate developer with a proven track record of delivering exceptional results.
                   </p>
                 </div>
-                <Button size="lg" className="w-full sm:w-auto bg-cyan-300 hover:bg-cyan-400">
-                  Download CV
-                </Button>
+                <Link href="/CV.pdf" download>
+                  <Button size="lg" className="w-full sm:w-auto bg-cyan-300 hover:bg-cyan-400">
+                    Download CV
+                  </Button>
+                </Link>
               </SectionTransition>
 
               <div className="space-y-4">
@@ -162,7 +167,7 @@ export default function Home() {
                 </SectionTransition>
                 <div className="space-y-6">
                   {experience.map((item, index) => (
-                    <SectionTransition 
+                    <SectionTransition
                       key={item.period}
                       direction="right"
                       delay={index * 0.1}
@@ -188,7 +193,7 @@ export default function Home() {
               </SectionTransition>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
                 {projects.map((project, index) => (
-                  <SectionTransition 
+                  <SectionTransition
                     key={project.id}
                     direction="left"
                     delay={index * 0.1}
