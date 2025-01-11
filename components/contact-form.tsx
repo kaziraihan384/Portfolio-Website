@@ -35,7 +35,7 @@ export default function ContactForm() {
         <Input placeholder="Your name" required />
         <Input type="email" placeholder="Your email" required />
         <Textarea placeholder="Your message" className="min-h-[120px]" required />
-        <Button type="submit" disabled={isSubmitting} className="w-full">
+        <Button type="submit" disabled={isSubmitting} className="w-full bg-cyan-300">
           <Send className="mr-2 h-4 w-4" />
           {isSubmitting ? "Sending..." : "Send Message"}
         </Button>
