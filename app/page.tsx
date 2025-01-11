@@ -62,7 +62,7 @@ export default function Home() {
                         rel="noopener noreferrer"
                         className="hover:text-primary transition-colors"
                       >
-                        <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
+                        {/* <Icon className="h-5 w-5 sm:h-6 sm:w-6" /> */}
                       </a>
                     );
                   })}
