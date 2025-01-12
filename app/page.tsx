@@ -30,49 +30,57 @@ export default function Home() {
                 ease: [0.22, 1, 0.36, 1]
               }}
             >
-              <p className="text-base sm:text-lg text-muted-foreground">
-                {personalData.role}
-              </p>
-              <h1 className="text-3xl sm:text-5xl font-bold">
-                {personalData.headline}{" "}
-                <span className="text-primary block text-4xl sm:text-7xl mt-2 text-cyan-300">
-                  {personalData.name}
-                </span>
-              </h1>
-              <p className="text-base sm:text-xl text-muted-foreground max-w-[600px] mx-auto lg:mx-0">
-                {personalData.description}
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center sm:items-start">
-                <Link href="/CV.pdf" download>
-                  <Button size="lg" className="w-full sm:w-auto px-8 bg-cyan-300 hover:bg-cyan-400">
-                    Download CV
-                  </Button>
-                </Link>
-                <div className="flex gap-6 justify-center">
-                  {Object.entries(personalData.socialLinks).map(([platform, url]) => {
-                    const Icon = {
-                      github: Github,
-                      linkedin: Linkedin,
-                      youtube: Youtube,
-                      twitter: Twitter
-                    }[platform];
+              <SectionTransition direction="left" >
+                <p className="text-base sm:text-lg text-muted-foreground">
+                  {personalData.role}
+                </p>
+              </SectionTransition>
+              <SectionTransition direction="left" >
+                <h1 className="text-3xl sm:text-5xl font-bold">
+                  {personalData.headline}{" "}
+                  <span className="text-primary block text-4xl sm:text-7xl mt-2 text-cyan-300">
+                    {personalData.name}
+                  </span>
+                </h1>
+              </SectionTransition>
+              <SectionTransition direction="left" >
+                <p className="text-base sm:text-xl text-muted-foreground max-w-[600px] mx-auto lg:mx-0">
+                  {personalData.description}
+                </p>
+              </SectionTransition>
+              <SectionTransition direction="left" >
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center sm:items-start">
+                  <Link href="/CV.pdf" download>
+                    <Button size="lg" className="w-full sm:w-auto px-8 bg-cyan-300 hover:bg-cyan-400">
+                      Download CV
+                    </Button>
+                  </Link>
+                  <div className="flex gap-6 justify-center">
+                    {Object.entries(personalData.socialLinks).map(([platform, url]) => {
+                      const Icon = {
+                        github: Github,
+                        linkedin: Linkedin,
+                        youtube: Youtube,
+                        twitter: Twitter
+                      }[platform];
 
-                    return (
-                      Icon && (
-                        <a
-                          key={platform}
-                          href={url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:text-primary transition-colors"
-                        >
-                          <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
-                        </a>
-                      )
-                    );
-                  })}
+                      return (
+                        Icon && (
+                          <a
+                            key={platform}
+                            href={url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-primary transition-colors"
+                          >
+                            <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
+                          </a>
+                        )
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
+              </SectionTransition>
             </motion.div>
             <motion.div
               className="w-full sm:w-2/3 lg:w-1/2 max-w-[400px] lg:max-w-[500px] mt-8"
@@ -83,10 +91,12 @@ export default function Home() {
                 ease: [0.22, 1, 0.36, 1]
               }}
             >
-              <RotatingCircle
-                imageUrl={personalData.image}
-                altText={personalData.name}
-              />
+              <SectionTransition direction="right" >
+                <RotatingCircle
+                  imageUrl={personalData.image}
+                  altText={personalData.name}
+                />
+              </SectionTransition>
             </motion.div>
           </div>
         </section>
