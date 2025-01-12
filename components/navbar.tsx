@@ -29,7 +29,7 @@ export default function Navbar() {
       <div className="container flex h-14 items-center">
         <div className="ml-8 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <span className="font-bold">Luke</span>
+            <span className="font-bold">Raihan</span>
             <span className="text-[#00FF9D]">.</span>
           </Link>
         </div>
