@@ -9,7 +9,7 @@ export const personalData = {
     github: "https://github.com/TheCoffeCoder",
     linkedin: "https://www.linkedin.com/in/kazi-raihan-b636552b6/",
     youtube: "https://www.youtube.com/@thecoffecoder4503",
-    twitter: "https://twitter.com/lukecoleman"
+    twitter: "https://x.com/KaziRaihan384"
   }
 };
 
