@@ -1,5 +1,5 @@
 export const personalData = {
-  name: "Jon Doe",
+  name: "Kazi Raihan",
   role: "Software Developer",
   headline: "Hello I'm",
   description: "I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies.",
