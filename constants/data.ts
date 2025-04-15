@@ -3,7 +3,7 @@ export const personalData = {
   role: "Software Developer",
   headline: "Hello I'm",
   description: "I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies.",
-  image: "https://ucarecdn.com/07f8ac9a-4ee9-47fa-86b0-8e58be39bf5c/-/preview/960x957/",
+  image: "https://ucarecdn.com/f9ad92d5-1d0b-4776-a023-9d6681ab09ca/-/preview/958x960/",
   resumeUrl: "/resume.pdf",
   socialLinks: {
     github: "https://github.com/TheCoffeCoder",
